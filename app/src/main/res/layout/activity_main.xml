@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#339966">
+
+
+    <Button
+        android:id="@+id/btn_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="increment_score"
+        android:text="Score"
+        android:layout_below="@+id/tv_pirates"
+        android:layout_alignLeft="@+id/tvChifs"
+        android:layout_alignStart="@+id/tvChifs"
+        android:layout_marginTop="92dp" />
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_alignBaseline="@+id/tvChifs"
+        android:layout_alignBottom="@+id/tvChifs"
+        android:layout_alignLeft="@+id/tv_dec"
+        android:layout_alignStart="@+id/tv_dec" />
+
+    <Button
+        android:id="@+id/btn_dec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="score_decremet"
+        android:text="score_dec"
+        android:layout_alignBaseline="@+id/btn_score"
+        android:layout_alignBottom="@+id/btn_score"
+        android:layout_alignRight="@+id/et_name"
+        android:layout_alignEnd="@+id/et_name" />
+
+    <TextView
+        android:id="@+id/tv_dec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_alignBaseline="@+id/tv_pirates"
+        android:layout_alignBottom="@+id/tv_pirates"
+        android:layout_toRightOf="@+id/btn_score"
+        android:layout_toEndOf="@+id/btn_score" />
+
+    <TextView
+        android:id="@+id/tv_pirates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:text=" "
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="34dp" />
+
+    <TextView
+        android:id="@+id/tvChifs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:layout_below="@+id/tv_dec"
+        android:layout_alignLeft="@+id/tv_pirates"
+        android:layout_alignStart="@+id/tv_pirates"
+        android:layout_marginTop="31dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:onClick="increment_score2"
+        android:text="score2"
+        android:layout_below="@+id/btn_score"
+        android:layout_alignLeft="@+id/btn_score"
+        android:layout_alignStart="@+id/btn_score" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button"
+        android:layout_toEndOf="@+id/tv_score"
+        android:layout_toRightOf="@+id/tv_score"
+        android:onClick="score_decremet2"
+        android:text="decScore" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:hint="Team1"
+        android:inputType="textPersonName"
+        android:layout_alignRight="@+id/button2"
+        android:layout_alignEnd="@+id/button2" />
+
+    <Button
+        android:id="@+id/btn_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_name2"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/tvChifs"
+        android:layout_toRightOf="@+id/tvChifs"
+        android:onClick="btn_save"
+        android:background="#ff33"
+        android:text="Enter Team Name"
+        android:textColor="#66CC66" />
+
+    <EditText
+        android:id="@+id/et_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:ems="10"
+        android:hint="Team2"
+        android:inputType="textPersonName"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/et_name"
+        android:layout_alignLeft="@+id/et_name"
+        android:layout_alignStart="@+id/et_name"
+        android:layout_alignRight="@+id/et_name"
+        android:layout_alignEnd="@+id/et_name" />
+
+
+</RelativeLayout>
